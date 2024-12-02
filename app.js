@@ -25,7 +25,7 @@
                 result = "吉";
             }else if (colour === "みどり" && number === 1) {
                 result = "台吉";
-            }else if (colour === "みどり" && number === 3) {
+            }else if (colour === "みどり" && number === 2) {
                 result = "大大吉";
             }
 
