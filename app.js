@@ -23,6 +23,10 @@
                 result = "中吉";
             }else if (colour === "みどり" && number === 0) {
                 result = "吉";
+            }else if (colour === "みどり" && number === 1) {
+                result = "台吉";
+            }else if (colour === "みどり" && number === 3) {
+                result = "大大吉";
             }
 
             document.getElementById('result-output').innerText = "あなたの今週の運勢は【" + result + "】です";
