@@ -21,6 +21,8 @@
                 result = "大吉";
             } else if (colour === "オレンジ" && number === 2) {
                 result = "中吉";
+            }else if (colour === "みどり" && number === 0) {
+                result = "吉";
             }
 
             document.getElementById('result-output').innerText = "あなたの今週の運勢は【" + result + "】です";
