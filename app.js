@@ -24,3 +24,5 @@ function checkFortune() {
     } else if (colour === "みどり" && number === 0) {
         result = "運が良いです。";
     } else if (colour === "みどり     
+                document.getElementById('result-output').innerText = "あなたの今週の占いは【" + result + "】です";
+        }
