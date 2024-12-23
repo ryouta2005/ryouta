@@ -1,7 +1,7 @@
 function checkFortune() {
     var colour = document.getElementById('colour-select').value;
     var number = parseInt(document.getElementById('number-input').value, 10);
-    var result = "悪い運勢"; // デフォルトの値
+    var result = "悪い運勢"; // Default value
 
     if (colour === "黒" && number === 0) {
         result = "良い兆しがあります。";
@@ -23,6 +23,12 @@ function checkFortune() {
         result = "良い運勢です。";
     } else if (colour === "みどり" && number === 0) {
         result = "運が良いです。";
-    } else if (colour === "みどり     
-document.getElementById('result-output').innerText = "あなたの今週の占いは【" + result + "】です";
-        }
+    } else if (colour === "みどり" && number === 1) {
+        result = "素晴らしい出来事が近づいています。";
+    } else if (colour === "みどり" && number === 2) {
+        result = "注意が必要です。";
+    }
+
+    // Display the result in the HTML element with id="result-output"
+    document.getElementById('result-output').innerText = "あなたの今週の占いは【" + result + "】です";
+}
