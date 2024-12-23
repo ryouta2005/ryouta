@@ -1,7 +1,7 @@
 function checkFortune() {
     var colour = document.getElementById('colour-select').value;
     var number = parseInt(document.getElementById('number-input').value, 10);
-    var result = "悪い運勢"; // Default value
+    var result = "悪い運勢"; //Default value
 
     if (colour === "黒" && number === 0) {
         result = "良い兆しがあります。";
@@ -30,5 +30,5 @@ function checkFortune() {
     }
 
     // Display the result in the HTML element with id="result-output"
-    document.getElementById('result-output').innerText = "あなたの今週の占いは【" + result + "】です";
+    document.getElementById('result-output').innerText = "あなたの今週の占いは【" + result + "】;
 }
